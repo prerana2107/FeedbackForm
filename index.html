@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container feedback-form">
+        <div class="feedback-image">
+            <img src="logo.png" alt="logo">
+        </div>
+        <form action="POST">
+            <h3>Drop us a Feedback</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <p>Enter Your Name</p>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                  
+                    <div class="form-group">
+                        <p>how would you rate this Exercise?</p>
+                        <div id="form">
+                            <fieldset class="stars">
+                                <input type="radio" name="stars" id="star1" ontouchstart="ontouchstart" />
+                                <label class="fa fa-star" for="star1"></label>
+                                <input type="radio" name="stars" id="star2" ontouchstart="ontouchstart" />
+                                <label class="fa fa-star" for="star2"></label>
+                                <input type="radio" name="stars" id="star3" ontouchstart="ontouchstart" />
+                                <label class="fa fa-star" for="star3"></label>
+                                <input type="radio" name="stars" id="star4" ontouchstart="ontouchstart" />
+                                <label class="fa fa-star" for="star4"></label>
+                                <input type="radio" name="stars" id="star5" ontouchstart="ontouchstart" />
+                                <label class="fa fa-star" for="star5"></label>
+                                <input type="radio" name="stars" id="star-reset" />
+                            </fieldset>
+                        </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <p>This exercise exposed you to new knowledge and practices?</p>
+                        <div class="radio-container">
+                            <input type="radio" id="agree" name="agrdgr" />
+                            <label for="agree">Strongly Agree</label>
+    
+                            <input type="radio" id="disagree" name="agrdgr" />
+                            <label for="disagree">Strongly Disagree</label>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Would you recommend this test to other students?</p>
+                        <div class="radio-container">
+                        <input type="radio" id="yes" name="5" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="5" />
+                        <label for="no">No</label>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <p>Enter Your Email</p>
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <p>Did you satisfy with our service?<p>
+                            <div class="radio-container">
+                                <input type="radio" id="Yes" name="3" />
+                                <label for="Yes">Yes</label>
+                                <input type="radio" id="No" name="3" />
+                                <label for="No">No</label>
+                                </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Level of knowledge on end of the test?</p>
+                        <div class="radio-container">
+                            <input type="radio" id="vgood" name="4" />
+                            <label for="vgood">Very Good</label>
+                            <input type="radio" id="good" name="4" />
+                            <label for="good">Good</label>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" id="poor" name="4" />
+                            <label for="poor">Poor</label>
+                            <input type="radio" id="vpoor" name="4" />
+                            <label for="vpoor">Very Poor</label>
+                         </div>
+                    </div>
+                    <textarea name="txtmsg" id="txtmsg" class="form-control" placeholder="Your Message or Suggestion" style=" height:150px; margin-bottom:8px;"></textarea>
+
+                    
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+
+                    <div class="form-group">
+                        <input type="submit" name="btnsubmit" class="btnFeedback" value="Send Feedback" style="outline:none;">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
